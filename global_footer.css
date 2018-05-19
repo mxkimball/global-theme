@@ -1,3 +1,4 @@
+/* Base Styling */
 .l-mountain-container {
   width: 96%;
   max-width: 1200px;
@@ -37,6 +38,8 @@
 .c-custom-footer .c-custom-footer__nav ul li a {
   color: #333;
 }
+
+/* Define hyperlink colors */
 #footerTable a {
   color: #414042;
 }
@@ -45,4 +48,9 @@
 }
 p#testDataDisplay {
     display: none;
+}
+
+/* Adjust HTML Tile default margins */
+.js-tile-body iframe.j-tile-iframe body {
+    margin: 0px !important;
 }
