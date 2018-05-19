@@ -1,0 +1,58 @@
+/*	
+Stylesheet:		RSA Link 2017 Redesign Mobile
+Scope:			Global (Entire Website - Mobile Device)
+Author:			Jeff Shurtliff
+Last Updated:		30 Dec 2017
+*/
+
+/* Fix the mobile display */
+@media screen and (max-width: 40em) {
+	.j-placeHeaderInner {
+		padding-top: 0px;		
+	}
+}
+@media screen and (max-width: 40em) {
+	body.j-body-place #j-main .j-layout {		
+		padding-top: 20px;
+	}
+}
+
+/* Hide the Recent Activity section of the Activity Page for Mobile */
+@media screen and (max-width: 40em) {
+	#j-dynamic-pane {
+		 /* display: none; */
+	}
+	.j-tile .j-act-header {
+		display: none !important;
+		margin: 0px;
+	}
+	.j-act-stream {
+		display: none;
+	}
+}
+
+/* Hide blue menu bar on mobile devices */
+@media screen and (max-width: 40em) {
+	.j-placeNav {
+		display: none !important;
+	}
+}
+
+/* Fix the website footer on mobile */
+@media screen and (max-width: 40em) {
+	#footerTable td {
+		display: block;
+		width: 100% !important;
+	}
+}
+
+/* Display knowledge article vertically on iPhone 6 and below */
+@media screen and (max-width: 375px) {
+	table.kb-article td {
+		display: block;
+		max-width: 320px !important;
+	}
+	table.kb-article pre.ckeditor_codeblock {
+		margin: 10px 0 10px -1px !important;
+	}
+}

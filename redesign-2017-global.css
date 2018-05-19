@@ -1,0 +1,213 @@
+/*	
+Stylesheet:		RSA Link 2017 Redesign
+Scope:			Global (Entire Website)
+Author:			Jeff Shurtliff
+Last Updated:		27 Sep 2017
+*/
+
+/* Remove the white background of the header */
+#j-header, #j-compact-header {
+    background: none !important;
+}
+
+/* Hide the space icon */
+.j-placeHdImg {
+    visibility: hidden;
+}
+
+/* Adjust location of breadcrumbs and buttons */
+.j-placeHeaderWrap {
+    line-height: 50px;
+    vertical-align: top;
+    position: relative;
+}
+.j-placeHeaderInner {
+    margin-left: 10px;
+}
+
+/* Hide the space banner image and adjust height */
+.j-body-place #jive-body .j-page-header {
+    background: none;
+    height: 35px !important;		/* Added !important to override any residual custom styling -- RSALINK-3057 */
+}
+
+/* Change breadcrumb color */
+.j-page-header #jive-breadcrumb a {
+    color: #414042;
+    opacity: .7;
+}
+
+/* Adjust spacing between breadcrumbs and place name */
+.j-placeHeaderWrap #jive-breadcrumb {
+    padding-bottom: 8px;
+}
+
+/* Change breadcrumb ">" character color */
+div#jive-breadcrumb span {
+    color: #414042;
+}
+
+/* Change place title color */
+.j-placeTitle a {
+    color: #414042 !important;
+}
+
+/* Hide the log in message when users aren't logged in */
+.j2-base-components-global-guest-call-to-action {
+    display: none;
+}
+
+/* Hide the 'page is customizable' box for admin users */
+.j-page-customizable-message {
+    display: none;
+}
+
+/* Make breadcrumbs and place name left-aligned */
+.j-body-place #jive-body .j-page-header {
+    padding-left: 20px; !important;
+}
+
+/* Make action buttons right-aligned */
+.j-page-header .j-placeHdActions {
+    right: 20px;
+}
+
+/* Adjust place title size and location */
+.j-page-header .j-placeName {
+    font-size: 15px;
+    vertical-align: top;
+    margin-top: -10px;
+    line-height: 20px;
+}
+
+/* Hide the About button */
+#jive-place-link-about {
+    display: none;
+}
+
+/* Change background color of action buttons */
+.j-place-button {
+    background-color: #BE3A34;
+}
+
+/* Change hover color of buttons */
+.j-place-button:hover, .j-place-button:focus {
+    background: rgba(160,50,44,1);
+    text-decoration: none;
+}
+
+/* Move breadcrumbs even with main menu */
+.j-body-place #jive-body .j-page-header {
+    padding: 0 0 0 20px;
+}
+
+/* Remove box shadow from header section and set overflow */
+.j-placeNav {
+    box-shadow: none;
+    overflow: hidden;
+}
+
+/* Raise Jive buttons slightly */
+#j-place-header-actions {
+    margin-top: -5px;
+}
+
+/* Add fade effect to action buttons */
+.j-page-header .j-placeHdActions>div, .j-page-header .j-placeHdActions a.j-place-button {
+    display: inline-block;
+    transition: background-color .25s ease-out;
+}
+
+/* Raise widget container to be just below the condensed space header */
+#jive-widget-container {
+    margin-top: -85px;
+}
+
+/* Exclude the home page when raising the widget container */
+.j-home-welcome > #jive-widget-container {
+    margin-top: 0px;
+}
+
+/* Change font family of breadcrumbs and place title to Arial */
+#jive-breadcrumb {
+    font-family: Arial;
+}
+.j-placeTitle {
+    font-family: Arial;
+}
+
+
+/* CONTENT PAGE */
+
+/* Lower the navigation menu */
+.j-placeNav {
+    bottom: -45px;
+}
+
+/* Lower the page body */
+.j-layout-sl > .j-column-wrap-s {
+    margin-top: 60px;
+}
+
+/* Change background color of space navigation menu */
+.j-placeNav .j-placeNavBg {
+    background: #006ba6;
+    opacity: 1;
+}
+
+/* Change color of selected tab */
+.j-placeNav .j-placeLinks li.j-tab-selected a, .j-placeNav .j-placeLinks li.active a {
+    opacity: 1;
+    background: #63b5e5;
+}
+
+/* Adjust the top margin for Jive container */
+#jive-widget-container {
+    margin-top: -20px;
+}
+
+/* Hide the navigation bar */
+.j-placeNav { 
+	display: none; 
+}
+
+/* Change the size of widget headers */
+.jive-widget-header {
+    height: 21px;
+}
+h4.jive-widget-handle {
+    font-size: 13px;
+    margin-top: 4px;
+    font-weight: bold;
+    font-family: Arial,sans-serif;
+}
+
+/* Adjust position of the "Place Image" button on the Space Settings view */
+.j-applyTemplate ~ .j-page-header .j-placeImageDisplayContainer {
+    margin-top: -130px;
+    margin-left: 87%;
+}
+
+/* Add spacing between header and body on the Space Settings view */
+#jive-body .j-applyTemplate {
+    margin-bottom: 10px;
+}
+
+/* Hide the Restore Defaults button when editing Overview Pages */
+.jive-widgets-buttons button#reset-defaults {
+    display: none;
+}
+
+/* Hide the ability to downvote ideas */
+button.js-vote-button.js-vote-down {
+    display: none;
+}
+.j-idea-vote-history .j-participant-buttons ul li:nth-child(2) {
+    display: none !important;
+}
+
+/* Extend the Products drop down in the main menu */
+.j-custom-link .j-pop .j-menu ul {
+    min-width: 265px;
+    max-width: 400px;
+}

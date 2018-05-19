@@ -1,0 +1,212 @@
+/* BEGIN RSA LINK HEADER CSS */
+.l-mountain-container {
+  width: 96%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.l-mountain-row {
+  margin-left: -15px;
+  margin-right: -15px;
+  *zoom: 1;
+}
+.l-mountain-row:before,
+.l-mountain-row:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+.l-mountain-row:after {
+  clear: both;
+}
+.c-custom-header {
+  background: transparent;
+  height: 45px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  background-color: #FFF;
+}
+.c-custom-header .c-custom-header__brand {
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.c-custom-header .c-custom-header__brand img {
+  margin-bottom: -20px;
+}
+.c-custom-header .c-custom-header__nav {
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: right;
+}
+.c-custom-header .c-custom-header__nav ul {
+  list-style: none;
+}
+.c-custom-header .c-custom-header__nav ul li {
+  display: inline-block;
+  padding: 0;
+}
+.c-custom-header .c-custom-header__nav ul li {
+  margin-left: 12px;
+  margin-top: -5px;
+}
+.c-custom-header .c-custom-header__nav ul li a {
+  color: #696767;
+}
+.c-custom-header .c-custom-header__nav ul li a img {
+  position: relative;
+  top: 2px;
+}
+.c-custom-header .c-custom-header__nav ul li.u-brick-logo {
+  position: relative;
+  top: 5px;
+}
+.c-custom-header .c-custom-header__nav ul li.u-brick-logo img {
+  width: 55px;
+}
+span[code1]
+{
+font-family : "Courier New"
+}
+
+#j-header, #j-compact-header {
+    background-color: #FFF;
+    background-image: none;
+}
+/* END RSA LINK HEADER CSS */
+
+
+/* BEGIN CUSTOM CSS */
+
+/* ============================= */
+/* Knowledge Base Customizations */
+/* ============================= */
+
+/* Change the height of <br> tags brought over from Salesforce */  
+table.kb-article br {  
+    margin: 2em;  
+    display: block;  
+    font-size: 24%;  
+    content: "";  
+}  
+/* Keep the 'Applies To' field at the normal <br> width */
+table.kb-article tr:nth-child(2) br {
+    margin: 0em;
+}
+/* Keep the code snippets at the normal <br> width */
+table.kb-article pre.ckeditor_codeblock br {
+    margin: 0em;
+}
+
+/* Add padding between knowledge base article table rows */  
+table.kb-article td {  
+    padding-bottom: 20px;  
+}  
+
+/* Expand code snippets to full width in Jive */
+table.kb-article pre.ckeditor_codeblock {
+    width: 96% !important;
+}
+
+/* =========================== */
+/* Jive Content Customizations */
+/* =========================== */
+
+/* Fix the Jive Content footer to conform to background dimensions */
+@media only screen and (min-width: 1263px) {
+	#jive-footer-region {
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+}
+
+/* Invert the place icon in the Publish Location box */
+#js-publishbar-place-selection .j-place-image-container {
+    filter: invert(100%);
+}
+/* Invert the place icon in the hover card */
+.j-mini-modal-place .j-modal-content .j-place-photo {
+    filter: invert(100%);
+}
+
+/* Invert the place icon in the global search */
+.j-search-place-image {
+    filter: invert(100%);
+}
+
+/* Hide the Space Administrators tile on the People tab */
+.j-browse-people .j-box.j-box-owners {
+    display: none;
+}
+
+/* Change the "Unauthorized" message in Jive */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+	/* Chrome 29+ */
+	.j2-base-components-global-unauthorized p {
+		visibility: hidden;
+	}
+	.j2-base-components-global-unauthorized p:after {
+		content: 'This place or content does not exist or access to it is restricted. If you think this is a mistake, please confirm that you are logged in and that the URL is correct, then contact RSA Customer Support for assistance.';
+		display: block;
+		visibility: visible;
+		margin-top: -50px;
+	}
+}
+
+/* Hide the ability to create subspaces via the UI */
+.j-place-actions-links #jive-place-link-actions-space {
+    display: none;
+}
+.j-place-actions-links #jive-place-link-actions-video {
+    /* margin-top: -15px; */
+}
+.jive-widget-actions #jive-link-createSub {
+    display: none;
+}
+
+/* Hide ability to change space banner */
+.j-page-header a.j-placeBgImageDisplay.j-placeElementEditable {
+    display: none;
+}
+
+/* Apply styling to the Jive Announcements */
+.jive-alert-announcement-label {
+    color: #be3a34;
+	font-weight: bold !important;
+}
+.jive-alert-header .jive-alert-title {
+    font-size: 1.2em;	
+}
+#jive-alert-details-show-1 a.font-color-meta-light {
+    display: none;
+}
+.jive-alert-header {
+    width: 100%;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jive-icon-med.jive-icon-announcement {
+    display: none;
+}
+.j-body-place #j-main #jive-alert {
+    margin: auto auto 0px;
+}
+
+/* Center embedded videos in Jive documents */
+.j-content-body .jive-rendered-content iframe#mediaFrame {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+/* END CUSTOM CSS */
