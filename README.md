@@ -2,7 +2,7 @@
 Web development files (HTML, CSS, JavaScript, etc.) for the overall theme / branding on RSA Link
 
 **All HTML files (.htm) should use the following naming convention:** 
-`spaceType_scope_element_type_description_additional.htm`
+`spaceType_scope_element_description_additional.htm`
 
 Section | Description | Examples
 ------- | ----------- | --------
