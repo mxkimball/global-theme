@@ -548,9 +548,4 @@ p.ckeditor_codeblock {
     padding: 5px 10px;
     margin-top: 5px;
 }
-
-/* Add spacing between <p> tags */
-.j-content-document .jive-rendered-content p {
-    margin-bottom: 10px;
-}
 /* END CUSTOM CSS */
